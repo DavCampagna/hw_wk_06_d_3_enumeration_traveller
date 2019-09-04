@@ -27,17 +27,17 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, journeys);
   });
 
-  // it('should be able to get the journeys start locations', function() {
-  //   const expected = [
-  //     journey1.startLocation,
-  //     journey2.startLocation,
-  //     journey3.startLocation,
-  //     journey4.startLocation,
-  //     journey5.startLocation
-  //   ];
-  //   assert.deepStrictEqual(traveller.getJourneyStartLocations(), expected);
-  // });
-  //
+  it('should be able to get the journeys start locations', function() {
+    const expected = [
+      journey1.startLocation,
+      journey2.startLocation,
+      journey3.startLocation,
+      journey4.startLocation,
+      journey5.startLocation
+    ];
+    assert.deepStrictEqual(traveller.getJourneyStartLocations(), expected);
+  });
+
   // it('should be able to get the journeys end locations', function() {
   //   const expected = [
   //     journey1.endLocation,
