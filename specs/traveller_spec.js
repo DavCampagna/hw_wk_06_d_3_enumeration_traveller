@@ -38,33 +38,33 @@ describe('Traveller', function() {
     assert.deepStrictEqual(traveller.getJourneyStartLocations(), expected);
   });
 
-  // it('should be able to get the journeys end locations', function() {
-  //   const expected = [
-  //     journey1.endLocation,
-  //     journey2.endLocation,
-  //     journey3.endLocation,
-  //     journey4.endLocation,
-  //     journey5.endLocation
-  //   ];
-  //   assert.deepStrictEqual(traveller.getJourneyEndLocations(), expected);
-  // });
-  //
-  // it('should be able to get journeys by transport', function() {
-  //   const expected = [
-  //     journey1,
-  //     journey2
-  //   ];
-  //   assert.deepStrictEqual(traveller.getJourneysByTransport('train'), expected);
-  // });
-  //
-  // it('should be able to get journeys over a certain distance', function() {
-  //   const expected = [
-  //     journey3,
-  //     journey4
-  //   ];
-  //   assert.deepStrictEqual(traveller.getJourneysByMinDistance(1000), expected)
-  // });
-  //
+  it('should be able to get the journeys end locations', function() {
+    const expected = [
+      journey1.endLocation,
+      journey2.endLocation,
+      journey3.endLocation,
+      journey4.endLocation,
+      journey5.endLocation
+    ];
+    assert.deepStrictEqual(traveller.getJourneyEndLocations(), expected);
+  });
+
+  it('should be able to get journeys by transport', function() {
+    const expected = [
+      journey1,
+      journey2
+    ];
+    assert.deepStrictEqual(traveller.getJourneysByTransport('train'), expected);
+  });
+
+  it('should be able to get journeys over a certain distance', function() {
+    const expected = [
+      journey3,
+      journey4
+    ];
+    assert.deepStrictEqual(traveller.getJourneysByMinDistance(1000), expected)
+  });
+
   // it('should be able to calculate total distance travelled', function() {
   //   assert.deepStrictEqual(traveller.calculateTotalDistanceTravelled(), 11710);
   // });
