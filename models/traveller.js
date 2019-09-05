@@ -29,13 +29,20 @@ Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
    });
 };
 
-// Traveller.prototype.calculateTotalDistanceTravelled = function () {
-//
-// };
-//
+Traveller.prototype.calculateTotalDistanceTravelled = function () {
+  return this.journeys.reduce((total, journey) => {
+    return total += journey.distance;
+  }, 0);
+};
+
 // Traveller.prototype.getUniqueModesOfTransport = function () {
+//   let modesOfTransport = this.journeys.map(function (journey) {
+//     return journey.transport;
+//    });
 //
+//   return uniqueModesOfTransport
 // };
+
 
 
 module.exports = Traveller;
